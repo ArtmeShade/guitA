@@ -11,6 +11,7 @@ html, body{
   flex-wrap: wrap;
   width: 100vw;
   position: relative;
+  overflow: hidden;
 }
 
 .runningTextAndVolume {
@@ -26,33 +27,62 @@ html, body{
   display: flex;
 }
 
-@keyframes runText {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .runningTextImg {
   width: 150vw;
   animation: runText 5s linear infinite ;
+}
+
+.patternObj {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2vw auto;
 }
 
 .patternContainer {
   background-color: #1E1E1E;
   width: 50vw;
   height: 55vw;
-  display: inline-block;
-  justify-content: center;
   z-index: 10000;
 }
 
-.circle {
-  margin-left: 4vw;
-  margin-top: 1vw;
+.patternElement {
+  width: 14vw;
+  height: 17vw;
   animation: pulse 2s infinite;
+  margin-left: 3vw;
+  display: flex;
+}
+
+.elemCont {
+  display: flex;
+  justify-content: center;
+}
+
+#circle {
+  width: 12vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+#red {
+  width: 12vw;
+  display: flex;
+  justify-content: center;
+}
+
+#red2 {
+  width: 12vw;
+  display: flex;
+  justify-content: center;
+}
+
+#green {
+  width: 12vw;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes pulse {
@@ -66,37 +96,6 @@ html, body{
     transform: scale(1);
   }
 }
-
-.red {
-  margin-left: 14vw;
-  margin-top: -7vw;
-  animation: pulse 2s infinite;
-}
-
-.red2 {
-  margin-left: 4.5vw;
-  margin-top: 1vw;
-  animation: pulse 2s infinite;
-}
-
-.green2 {
-  margin-left: 14vw;
-  margin-top: -7vw;
-  animation: pulse 2s infinite;
-}
-
-.green {
-  margin-left: 4vw;
-  margin-top: 0.5vw;
-  animation: pulse 2s infinite;
-}
-
-.circle2 {
-  margin-left: 15vw;
-  margin-top: -8vw;
-  animation: pulse 2s infinite;
-}
-
 
 .VolumeBar {
   position: absolute;
@@ -279,7 +278,8 @@ html, body{
 
 .linesLineImg {
   top: 170vw;
-  left: -20vw;
+  left: -10vw;
+  width: 130vw;
   position: absolute;
   animation:runText4 5s infinite linear;
 }
@@ -309,6 +309,7 @@ html, body{
 .linePatternImg {
   top: 85vw;
   left: -20vw;
+  width: 130vw;
   position: absolute;
   z-index: 222222;
   animation:runText3 5s infinite linear;
@@ -334,6 +335,15 @@ html, body{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  animation: runText 13s linear infinite ;
-  width:500vw
+  animation: runText 13s linear infinite;
+  width: 500vw;
+}
+
+@keyframes runText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
