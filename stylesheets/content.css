@@ -1,0 +1,339 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+.webPoster {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  position: relative;
+}
+
+.runningTextAndVolume {
+  display: flex;
+  width: 50vw;
+}
+
+.runningTextContainer {
+  width: 50vw;
+  background-color: #B8FF00;
+  overflow: hidden;
+  height: 39vw;
+  display: flex;
+}
+
+@keyframes runText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.runningTextImg {
+  width: 150vw;
+  animation: runText 5s linear infinite ;
+}
+
+.patternContainer {
+  background-color: #1E1E1E;
+  width: 50vw;
+  height: 55vw;
+  display: inline-block;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.circle {
+  margin-left: 4vw;
+  margin-top: 1vw;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.red {
+  margin-left: 14vw;
+  margin-top: -7vw;
+  animation: pulse 2s infinite;
+}
+
+.red2 {
+  margin-left: 4.5vw;
+  margin-top: 1vw;
+  animation: pulse 2s infinite;
+}
+
+.green2 {
+  margin-left: 14vw;
+  margin-top: -7vw;
+  animation: pulse 2s infinite;
+}
+
+.green {
+  margin-left: 4vw;
+  margin-top: 0.5vw;
+  animation: pulse 2s infinite;
+}
+
+.circle2 {
+  margin-left: 15vw;
+  margin-top: -8vw;
+  animation: pulse 2s infinite;
+}
+
+
+.VolumeBar {
+  position: absolute;
+  top: 25vw;
+  display: flex;
+}
+
+@keyframes runText2 {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.volumeImg {
+  width: 100vw;
+  animation: runText2 5s linear infinite ;
+}
+
+.textContainer {
+  height: 39vw;
+  background-color: white;
+  width: 50vw;
+  margin-top: 2vw;
+}
+
+.basicText {
+  color: #1E1E1E;
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Rounds';
+}
+
+.logoAndName {
+  width: 50vw;
+  background-color: #B8FF00;
+  overflow: hidden;
+  height: 45vw;
+}
+
+.projectName {
+  color: #FFF;
+  font-size: 10vw;
+  font-family: 'Kosmos';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.logo {
+  width: 30vw;
+  margin-left: 18%;
+  margin-top: 5vw;
+  transition: width 0.5s ease;
+  transform-origin: center;
+}
+
+.logo:hover {
+  width: 35vw;
+}
+
+.textPattern {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin-left: -5vw;
+  margin-top: 8vw;
+}
+
+.patternText {
+  color: #FF2E00;
+  font-family: Kosmos;
+  font-size: 7vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.green {
+  color: #B8FF00;
+}
+
+.textPatternContainer {
+  width: 50vw;
+  overflow: hidden;
+}
+
+.secondPatternContainer {
+  width: 50vw;
+  background-color: #B8FF00;
+}
+
+.patternImages {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20vw;
+  
+}
+
+.secondPatternImg {
+  width: 12vw;
+}
+
+.secondPatternCircle, .secondPatternCircle2 {
+  width: 12vw;
+  height: 12vw;
+  margin-right: 1vw;
+  border-radius: 100%;
+  background-color: #FFF;
+  margin-top: 1vw;
+}
+
+.secondPatternCircle2 {
+  animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #FFF;
+  }
+  100% {
+    background-color: #FF2E00;
+  }
+}
+
+#rotated1 {
+  transform: rotate(-90deg);
+  margin-left: 1.4vw;
+}
+
+#rotated2 {
+  transform: rotate(180deg);
+}
+
+#rotated3 {
+  transform: rotate(90deg);
+}
+
+#rotated4 {
+  transform: rotate(90deg);
+  margin-left: -2.4vw;
+}
+
+.third {
+  margin-top: 50vw;
+  padding-bottom: 20vw;
+}
+
+.bottomTextContainer {
+  width: 50vw;
+  background: #1E1E1E;
+}
+
+.bottomText {
+  color: #FFF;
+  font-family: "Rounds";
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 95%;
+  margin: 63vw auto 1vw auto;
+}
+
+.linesLine {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.linesLineImg {
+  top: 170vw;
+  left: -20vw;
+  position: absolute;
+  animation:runText4 5s infinite linear;
+}
+
+@keyframes runText4{
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}
+
+
+.circlesLine {
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  top: 170vw;
+}
+
+.linePattern {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.linePatternImg {
+  top: 85vw;
+  left: -20vw;
+  position: absolute;
+  z-index: 222222;
+  animation:runText3 5s infinite linear;
+}
+
+@keyframes runText3 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(10%);
+  }
+}
+
+.footer {
+  width: 100vw;
+}
+
+.footerText {
+  color: #1E1E1E;
+  font-family: Kosmos;
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  animation: runText 13s linear infinite ;
+  width:500vw
+}

@@ -1,0 +1,17 @@
+@import "reset.css";
+@import "content.css"; 
+@import "adaptive.css";
+
+@font-face {
+    font-family: "kosmos";
+    src: url("../fonts/Kosmos.otf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+  }
+
+  @font-face {
+    font-family: "rounds";
+    src: url("../fonts/Rounds.ttf") format("truetype");
+    font-style: normal;
+    font-weight: auto;
+  }
